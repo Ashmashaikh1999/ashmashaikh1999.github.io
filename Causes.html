@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<link href="Home.css" rel="stylesheet"></link>
+		<link rel="import" href="Home.html"></link>
+	</head>
+	<body bgcolor="FFDEAD">
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="Home.html">Home</a>
+			<a href="Introduction.html">Introduction</a>
+			<a href="Types.html">Types</a>
+			<a href="Symptoms.html">Symptoms</a>
+			<a class="active" href="Causes.html">Causes</a>
+			<a href="Prevention.html">Prevention</a>
+		</div>
+		</div>
+		<div id="main">
+			<button class="openbtn" onclick="openNav()">&#9776;</button>
+		</div>
+		<script>
+			$('a').on('click',function()
+			{
+				$('div.apply').find('a.active').removeClass('active');
+				$(this).addClass('active');
+			});
+			function openNav() 
+			{
+				document.getElementById("mySidebar").style.width = "250px";
+				document.getElementById("main").style.marginLeft = "250px";
+			}
+			function closeNav() 
+			{
+				document.getElementById("mySidebar").style.width = "0";
+				document.getElementById("main").style.marginLeft= "0";
+			}
+		</script>
+		<br>
+		<h2> Causes</h2>
+		<center><img src="causes.jpg" align="center" height="320px" width="320px"></li><br><br></center>
+			<ul>
+				<li><b>Abuse: </b>Past physical, sexual, or emotional abuse can increase the vulnerability to clinical depression later in life.</li>
+				<li><b>Certain medications: </b>Some drugs, such as isotretinoin (used to treat acne), the antiviral drug interferon-alpha, and corticosteroids, can increase your risk of depression.</li>
+				<li><b>Conflict: </b>Depression in someone who has the biological vulnerability to develop depression may result from personal conflicts or disputes with family members or friends.</li>
+				<li><b>Death or a loss: </b>Sadness or grief from the death or loss of a loved one, though natural, may increase the risk of depression.</li>
+				<li><b>Genetics: </b>
+					<ul><li>A family history of depression may increase the risk.</li> 
+						<li>It's thought that depression is a complex trait, meaning that there are probably many different genes that each exert small effects, rather than a single gene that contributes to disease risk.</li>
+						<li>The genetics of depression, like most psychiatric disorders, are not as simple or straightforward as in purely genetic diseases such as Huntington's chorea or cystic fibrosis.</li>
+					</ul>
+				</li>
+				<li><b>Major events: </b>
+					<ul>
+						<li>Even good events such as starting a new job, graduating, or getting married can lead to depression.</li>
+						<li>So can moving, losing a job or income, getting divorced, or retiring.</li>
+						<li>However, the syndrome of clinical depression is never just a "normal" response to stressful life events.</li>
+					</ul>
+				</li>
+				<li><b>Other personal problems: </b>Problems such as social isolation due to other mental illnesses or being cast out of a family or social group can contribute to the risk of developing clinical depression.</li>
+			<li><b>Serious illnesses: </b>Sometimes depression co-exists with a major illness or may be triggered by another medical condition.</li>
+			<li><b>Substance abuse: </b>
+				<ul>
+					<li>Nearly 30% of people with substance abuse problems also have major or clinical depression.</li>
+					<li>Even if drugs or alcohol temporarily make you feel better, they ultimately will aggravate depression.</li>
+				</ul>
+			</li>
+	</body>
+</html>
