@@ -1,0 +1,169 @@
+*{
+	margin:0;
+	padding:0;	
+}
+body
+{
+  font-family: "Lato", sans-serif;
+}
+.sidebar a.active,
+.sidebar a:active 
+{ 
+	background-color:red;
+}
+.sidebar
+{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:dimgrey;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar a 
+{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:white;
+  text-align:center;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover 
+{
+  color: red;
+  background-color:grey;
+}
+.sidebar .closebtn 
+{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 26px;
+  margin-left: 50px;
+}
+.openbtn
+{
+  font-size: 20px;
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  position:fixed;
+}
+.openbtn:hover 
+{
+  background-color:#444;
+}
+#main
+{
+  transition: margin-left .5s;
+  padding: 16px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px)
+{
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+h1
+{
+	size:70px;
+	font-style:italic;
+	text-align:left;
+}
+h2
+{
+	color:purple;
+	text-align:left;
+	font-size:35px;
+	margin-left:30px;
+}
+hr
+{
+	display:block;
+	margin:30px; 
+	height:5px;
+	border:none;
+	background-color:palevioletred;
+}
+header
+{
+	/*background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),url(bg1.jpg));*/
+	background-image: url('bg2.jpg');
+	height:100vh;
+	background-size:cover;
+	background-position:center;
+}
+body
+{
+	background-color:honeydew;
+	font-family:fantasy;
+	font-size:25px;
+}
+.title
+{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.title h1
+{
+	color:grey;
+	font-size: 70px;
+}
+.title h3
+{
+	position:absolute;
+	top:90px;
+	margin-left:180px;
+	color:grey;
+}
+p
+{
+	text-align:center;
+}
+ul 
+{	
+	list-style:none;
+	text-align:left;
+	margin-left:30px;	
+}
+ul li::before
+{
+	content:"\2022";
+	color:purple;
+	font-weight:bold;
+	display:inline-block;
+	width:lem;
+	margin-left: -lem;
+} 
+#head
+{
+	color:palevioletred;
+}
+#xyz
+{
+	color:purple;
+}
+#abc
+{
+	margin-left:50px;
+	margin-right:50px;
+	font-style:italic;
+}
+demo
+{
+	float:right;
+}
+#just
+{
+	text-align:left-center;
+}
