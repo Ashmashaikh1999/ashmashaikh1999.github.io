@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="Home.css" rel="stylesheet" type="text/css"></link>
+	</head>
+	<body>
+		<div class="title">
+			<h1><i>Depressopedia</i></h1>
+			<h3>~Ashma Shaikh</h3>
+		</div>
+		<header>
+			<div id="mySidebar" class="sidebar">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+				<a class="active" href="Home.html">Home</a>
+				<a href="Introduction.html">Introduction</a>
+				<a href="Types.html">Types</a>
+				<a href="Symptoms.html">Symptoms</a>
+				<a href="Causes.html">Causes</a>
+				<a href="Prevention.html">Prevention</a> 
+			</div>
+			<div id="main">
+				<button id="openNav" class="openbtn" onclick="openNav()">&#9776;</button>
+			</div>
+		</header>
+		<script>
+			$('a').on('click',function()
+			{
+				$('div.apply').find('a.active').removeClass('active');
+				$(this).addClass('active');
+			});
+			function openNav() 
+			{
+				document.getElementById("mySidebar").style.width = "250px";
+				document.getElementById("main").style.marginLeft = "250px";
+				document.getElementById("mySidebar").style.display="block";
+			}
+			function closeNav() 
+			{
+				document.getElementById("mySidebar").style.width = "0";
+				document.getElementById("main").style.marginLeft= "0";
+			}
+		</script>
+	</body>
+</html> 
