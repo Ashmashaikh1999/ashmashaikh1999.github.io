@@ -69,7 +69,7 @@ body
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px)
 {
-  .sidebar {padding-top: 30px;}
+  .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
 h1
@@ -117,7 +117,7 @@ body
 .title h1
 {
 	color:grey;
-	font-size: 60px;
+	font-size: 30px;
 }
 .title h3
 {
@@ -125,7 +125,7 @@ body
 	top:90px;
 	margin-left:180px;
 	color:grey;
-	font-size: 20px;
+	font-size: 30px;
 }
 p
 {
