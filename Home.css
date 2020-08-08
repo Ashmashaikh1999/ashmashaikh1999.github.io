@@ -117,7 +117,7 @@ body
 .title h1
 {
 	color:grey;
-	font-size: 70px;
+	font-size: 60px;
 }
 .title h3
 {
@@ -125,6 +125,7 @@ body
 	top:90px;
 	margin-left:180px;
 	color:grey;
+	font-size: 20px;
 }
 p
 {
